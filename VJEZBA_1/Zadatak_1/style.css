@@ -1,6 +1,8 @@
 body {
     font-family: Verdana, Geneva, sans-serif;
-    margin: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
     background-color: #f5f5f5;
 }
 
