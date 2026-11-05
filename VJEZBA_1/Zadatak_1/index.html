@@ -12,9 +12,10 @@
 <body>
     <h1>K-means - grupiranje točaka</h1>
 
+    <h2>O aplikaciji</h2>
     <p>
-        Kliknite na graf kako biste dodali točke,
-        a zatim odaberite željeni broj grupa.
+        Aplikacija omogućuje interaktivno grupiranje točaka prema njihovoj međusobnoj udaljenosti. 
+        Dodajte točke klikom na graf i odaberite željeni broj grupa.
     </p>
 
     <label for="cluster_count">Broj grupa:</label>
@@ -31,5 +32,13 @@
     <p id="status">Broj točaka: 0</p>
 
     <canvas id="graph" width="800" height="500"></canvas>
+
+    <h2>K-means</h2>
+    <p>
+        K-means je algoritam nenadziranog strojnog učenja koji
+        dijeli podatke u K grupa. Svaka točka pridružuje
+        se najbližem centru grupe, a centri se postupno ažuriraju
+        sve dok se grupe ne stabiliziraju.
+    </p>
 </body>
 </html>
