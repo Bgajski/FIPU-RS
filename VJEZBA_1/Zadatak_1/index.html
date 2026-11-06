@@ -4,40 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-means - grupiranje točaka</title>
-
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
-
 <body>
     <h1>K-means - grupiranje točaka</h1>
 
     <h2>O aplikaciji</h2>
     <p>
-        Aplikacija omogućuje interaktivno grupiranje točaka prema njihovoj međusobnoj udaljenosti. 
+        Aplikacija omogućuje interaktivno grupiranje točaka prema njihovoj međusobnoj udaljenosti.
         Dodajte točke klikom na graf i odaberite željeni broj grupa.
     </p>
 
     <label for="cluster_count">Broj grupa:</label>
-    <input
-        id="cluster_count"
-        type="number"
-        min="2"
-        max="10"
-        value="3"
-    >
-
+    <input id="cluster_count" type="number" min="2" max="10" value="3">
+    <button id="cluster" type="button">Grupiraj točke</button>
     <button id="delete" type="button">Obriši točke</button>
 
-    <p id="status">Broj točaka: 0</p>
-
+    <p id="status" role="status">Broj točaka: 0</p>
     <canvas id="graph" width="800" height="500"></canvas>
 
     <h2>K-means</h2>
     <p>
-        K-means je algoritam nenadziranog strojnog učenja koji
-        dijeli podatke u K grupa. Svaka točka pridružuje
-        se najbližem centru grupe, a centri se postupno ažuriraju
+        K-means je algoritam nenadziranog strojnog učenja koji dijeli podatke u K grupa.
+        Svaka se točka pridružuje najbližem centru grupe, a centri se postupno ažuriraju
         sve dok se grupe ne stabiliziraju.
     </p>
 </body>
