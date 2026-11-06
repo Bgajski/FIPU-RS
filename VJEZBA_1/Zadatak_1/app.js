@@ -1,4 +1,4 @@
-const API_URL = "https://tvoj-backend.onrender.com";
+const API_URL = "https://benji-kmeans-backend.onrender.com";
 
 const graph = document.getElementById("graph");
 const ctx = graph.getContext("2d");
