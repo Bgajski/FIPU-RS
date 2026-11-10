@@ -21,3 +21,17 @@ async def dohvati_proizvode():
         {"id": 2, "ime":"Mis"},
         {"id": 3, "ime":"usb"}
     ]
+    
+    return proizvodi
+    
+# pokretanje korutina
+async def main():
+    korisnici, proizvodi=await asyncio.gather(
+        dohvati_korisnike(),
+        dohvati_proizvode()
+    )
+    
+    print("Korisnici", korisnici)
+    print("Proizvodi", proizvodi)
+    
+asyncio.run(main())
