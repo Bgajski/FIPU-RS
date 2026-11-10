@@ -8,7 +8,7 @@ async def secure_data(podaci):
     return{
         "prezime": podaci["prezime"],
         "broj_kartice": abs(hash(podaci["broj_kartice"])),
-        "CVV": hash(podaci["CVV"])
+        "CVV": abs(hash(podaci["CVV"]))
     }
     
 # definiranje podataka i pokretanje korutine
